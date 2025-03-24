@@ -1,14 +1,10 @@
-import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Lilita_One } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const LilitaOne = Lilita_One({
+  variable: "--font-lilita-one",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400"
 });
 
 const bebsaNeue = Bebas_Neue({
@@ -26,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebsaNeue.variable} antialiased`}
+        className={`${LilitaOne.variable} ${bebsaNeue.variable} antialiased`}
       >
         {children}
       </body>

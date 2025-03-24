@@ -1,8 +1,6 @@
-@import "tailwindcss";
-
-/* @theme {
-  --font-bebas-neue : "Bebas Neue", sans-serif"
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -12,8 +10,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-lilita: var(--font-lilita-one);
   --font-neue: var(--font-bebas-neue);
 }
 
@@ -24,8 +21,8 @@
   }
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
